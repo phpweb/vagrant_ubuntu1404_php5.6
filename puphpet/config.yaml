@@ -69,6 +69,25 @@ vagrantfile:
                     auto: 'true'
                 owner: www-data
                 group: www-data
+            vflsf_h1n2uih88fix:
+                source: /Applications/MAMP/htdocs
+                target: /var/www
+                sync_type: nfs
+                smb:
+                    smb_host: ''
+                    smb_username: ''
+                    smb_password: ''
+                rsync:
+                    args:
+                        - '--verbose'
+                        - '--archive'
+                        - '-z'
+                    exclude:
+                        - .vagrant/
+                        - .git/
+                    auto: 'true'
+                owner: www-data
+                group: www-data    
         usable_port_range:
             start: 10200
             stop: 10500
