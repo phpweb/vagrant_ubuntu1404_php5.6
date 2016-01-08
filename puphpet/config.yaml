@@ -3,7 +3,7 @@ vagrantfile:
     vm:
         box: puphpet/ubuntu1404-x64
         box_url: puphpet/ubuntu1404-x64
-        hostname: ramazanlocal
+        hostname: ramazanubuntu56
         memory: '1024'
         cpus: '2'
         chosen_provider: parallels
