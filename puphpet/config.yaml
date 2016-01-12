@@ -206,6 +206,7 @@ apache:
         - proxy_http
         - deflate
         - expires
+        - headers
     vhosts:
         av_w8qw6b3fssyd:
             servername: awesome.dev
@@ -252,6 +253,7 @@ php:
         php:
             - cli
             - intl
+            - mcrypt
         pear: {  }
         pecl: {  }
     ini:
